@@ -1,3 +1,41 @@
+import { Rajdhani_600SemiBold } from "@expo-google-fonts/rajdhani";
+import * as Font from "expo-font";
+---------------------------------------------------------------------------
+  constructor() {
+    super();
+    this.state = {
+      fontLoaded: false
+    };
+  }
+async loadFonts() {
+  }
+
+  componentDidMount() {
+    this.loadFonts();
+  }
+
+-----------------------------------------------------------------------
+
+ await Font.loadAsync({
+      Rajdhani_600SemiBold: Rajdhani_600SemiBold
+    });
+    this.setState({ fontLoaded: true });
+    
+    ------------------------------------------------------------
+    
+     // Puedes devolver cualquier componente que quieras aquí
+              return (
+                <Ionicons
+                  name={iconName}
+                  size={size}
+                  color={color}
+                  size={size}
+                />
+              );
+              
+ -----------------------------------------------------------
+
+
 tabBarOptions={{
           activeTintColor: "#FFFFFF",
           inactiveTintColor: "black",
@@ -91,6 +129,42 @@ lowerContainer: {
     color: "#0A0101",
     fontFamily: "Rajdhani_600SemiBold"
   },
+  
+  -----------------------------------------------------------------------
+  
+  const bgImage = require("../assets/background2.png");
+const appIcon = require("../assets/appIcon.png");
+const appName = require("../assets/appName.png");
+-----------------------------------------------------------------------------
+
+        <ImageBackground source={bgImage} style={styles.bgImage}>
+          <View style={styles.upperContainer}>
+            <Image source={appIcon} style={styles.appIcon} />
+            <Image source={appName} style={styles.appName} />
+          </View>
+-----------------------------------------------------------------------
+bgImage: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
+  },
+  upperContainer: {
+    flex: 0.5,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  appIcon: {
+    width: 200,
+    height: 200,
+    resizeMode: "contain",
+    marginTop: 80
+  },
+  appName: {
+    width: 80,
+    height: 80,
+    resizeMode: "contain"
+  }
+
 
 ------------------------------------------------------------------------
 bgImage: {
