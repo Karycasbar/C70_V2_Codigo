@@ -20,7 +20,8 @@ async loadFonts() {
       Rajdhani_600SemiBold: Rajdhani_600SemiBold
     });
     this.setState({ fontLoaded: true });
-    
+-------------------------------------------------------------
+    import Ionicons from "react-native-vector-icons/Ionicons";
     ------------------------------------------------------------
     
      // Puedes devolver cualquier componente que quieras aquí
