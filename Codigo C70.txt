@@ -189,3 +189,12 @@ bgImage: {
     height: 80,
     resizeMode: "contain"
   },
+  
+  ----------------------------------------------------------------------
+   else  if(domState === "studentId") { 
+  this.setState({
+    studentId: data,
+    domState: "normal",
+    scanned: true
+  })
+ }
